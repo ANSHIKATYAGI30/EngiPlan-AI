@@ -13,15 +13,16 @@ Engineering students often:
 -> Most planners track tasks. EngiPlan AI understands learning.
 
 🎯 Solution
-EngiPlan AI works like a smart study mentor, using AI-driven logic to:
-Prioritize weak and prerequisite-heavy topics
-Allocate time based on subject credits and confidence levels
-Balance learning, practice, revision, and buffer time
-Adapt schedules dynamically as confidence improves
+EngiPlan AI works like a smart study mentor, using AI-driven logic to:- 
+1. Prioritize weak and prerequisite-heavy topics
+2. Allocate time based on subject credits and confidence levels
+3. Balance learning, practice, revision, and buffer time
+4. Adapt schedules dynamically as confidence improves
+
 The result is consistent progress, deeper understanding, and reduced stress.
 
 
-DEMO VIDEO LINK- https://youtu.be/Sfk25bXzC50
+DEMO VIDEO LINK- https://youtu.be/Sfk25bXzC50, 
 LIVE MVP- https://aistudio.google.com/apps/drive/1-IEfRobaJdndzV9XVBxgtDEO4P_u_agH?showPreview=true&showAssistant=true&fullscreenApplet=true
 
 🔮 Future Enhancements
