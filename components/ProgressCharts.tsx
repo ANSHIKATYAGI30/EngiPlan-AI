@@ -34,15 +34,15 @@ export const ProgressCharts: React.FC<ProgressChartsProps> = ({ insights, theme 
         <div className="h-64 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
-              <Pie
-                data={data}
-                cx="50%"
-                cy="50%"
-                innerRadius={60}
-                outerRadius={80}
-                paddingAngle={5}
-                dataKey="value"
-              >
+             <Pie
+               data={data}
+               cx="50%"
+               cy="50%"
+               innerRadius={60}
+               outerRadius={80}
+               paddingAngle={5}
+               dataKey="value"
+               label={({ percent }) => `${((percent ?? 0) * 100).toFixed(0)}%`}>
                 {data.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
