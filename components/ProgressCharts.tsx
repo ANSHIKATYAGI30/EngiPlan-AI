@@ -17,6 +17,15 @@ export const ProgressCharts: React.FC<ProgressChartsProps> = ({ insights, theme 
     value: item.timeAllocationPercent,
     color: COLORS[idx % COLORS.length]
   }));
+  
+  if (!data.length) {
+    return (
+      <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+        <p className="text-slate-500 dark:text-slate-400">
+          No study data available yet.
+        </p>
+      </div>
+    );}
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
