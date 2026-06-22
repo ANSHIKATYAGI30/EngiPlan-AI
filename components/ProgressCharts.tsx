@@ -65,7 +65,14 @@ export const ProgressCharts: React.FC<ProgressChartsProps> = ({ insights, theme 
         <div className="h-64 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data}>
-              <XAxis dataKey="name" stroke={textColor} fontSize={12} />
+              <XAxis
+                dataKey="name"
+                stroke={textColor}
+                fontSize={12}
+                angle={-30}
+                textAnchor="end"
+                height={60}
+                />
               <YAxis stroke={textColor} fontSize={12} />
               <Tooltip 
                 cursor={{ fill: theme === 'dark' ? '#334155' : '#f1f5f9' }}
