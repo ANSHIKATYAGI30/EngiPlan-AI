@@ -26,7 +26,7 @@ export const generateStudyPlan = async (
     - Graduation Year: ${profile.graduationYear}
 
     Subjects to cover:
-    ${subjects.map(s => `- ${s.name}: ${s.credits} Credits, Confidence: ${s.confidence}/5, Strong in: ${s.strongTopics}, Weak in: ${s.weakTopics}`).join('\n')}
+    ${subjects.map((s) =>`- ${s.name}: ${s.credits} Credits, Confidence: ${s.confidence}/5, Strong in: ${s.strongTopics || "None"}, Weak in: ${s.weakTopics || "None"}`).join("\n")}
 
     Availability:
     - Weekdays: ${availability.weekdayHours} hours/day
