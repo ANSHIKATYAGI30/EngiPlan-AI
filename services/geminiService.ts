@@ -103,10 +103,15 @@ export const generateStudyPlan = async (
   });
 
   try {
-    const text = response.text;
-    return JSON.parse(text);
-  } catch (error) {
-    console.error("Failed to parse Gemini response:", error);
-    throw new Error("Invalid response format from AI");
+  const text = response.text?.trim();
+
+  if (!text) {
+    throw new Error("Received an empty response from Gemini.");
   }
+
+  return JSON.parse(text);
+} catch (error) {
+  console.error("Failed to parse Gemini response:", error);
+  throw new Error("Invalid or empty response format from AI.");
+}
 };
